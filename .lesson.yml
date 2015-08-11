@@ -1,0 +1,8 @@
+---
+title: "HTTP Challenge"
+type: "challenge"
+description: "Use HTTP verbs to interact with a website."
+visibility: "assign"
+tags: "http, http-get"
+ignore:
+- "http-challenge.md"
