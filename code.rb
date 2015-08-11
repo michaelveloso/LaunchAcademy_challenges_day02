@@ -33,7 +33,7 @@ require 'nokogiri'
 DEFAULT_URL = 'http://launch-academy-chat.herokuapp.com/messages'
 
 def get_response(url)
-  uri = URI('http://launch-academy-chat.herokuapp.com/messages')
+  uri = URI(url)
   response = Net::HTTP.get(uri)
   return response
 end
@@ -57,6 +57,6 @@ def nokogiri_grab_messages(page)
   return messages
 end
 
-#puts get_response(DEFAULT_URL)
+puts get_response(DEFAULT_URL)
 #post_message("Always never forget to check your references")
-puts nokogiri_grab_messages(nokogiri_parse(DEFAULT_URL))[1..-1]
+#puts nokogiri_grab_messages(nokogiri_parse(DEFAULT_URL))[1..-1]
